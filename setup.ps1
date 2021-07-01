@@ -53,3 +53,5 @@ if($addedContents -match "\S")
     "$addedContents" |Add-Content -Path $PROFILE
     Write-Output "Done."
 }
+
+Write-Output "Now install \CascadiaCode.Nerd.Font.Complete.ttf and select this font in your shell to display glyphs correctly."
