@@ -1,14 +1,14 @@
 Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
 
 #Module setup
-$modules = ("DockerMsftProvider", "oh-my-posh", "posh-git", "SqlServer", "PSReadline")
+$modules = ("DockerMsftProvider", "oh-my-posh", "posh-git", "SqlServer", "PSReadline", "Terminal-Icons")
 
 foreach($module in $modules)
 {
     If (-not(Get-InstalledModule $module -ErrorAction silentlycontinue)) 
     {
         Write-Output "$module not installed, installing..."
-        Install-Module $module}
+        Install-Module $module -AllowPrerelease}
     Else 
     {
         Write-Output "$module is installed, updating..."
@@ -27,7 +27,9 @@ if (!(Test-Path $PROFILE))
 
 $profileCommands = ("Import-Module posh-git" `
                   , "Import-Module oh-my-posh" `
-                  , "Set-PoshPrompt -Theme blueish")
+                  , "Import-Module PSReadline" `
+                  , "Set-PoshPrompt -Theme blueish" `
+                  , "Import-Module -Name Terminal-Icons")
 $profileContents = Get-Content $PROFILE
 if($null -eq $profileContents)
 {
@@ -53,5 +55,9 @@ if($addedContents -match "\S")
     "$addedContents" |Add-Content -Path $PROFILE
     Write-Output "Done."
 }
+
+#Setup PSReadline
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -EditMode Windows
 
 Write-Output "Now install \CascadiaCode.Nerd.Font.Complete.ttf and select this font in your shell to display glyphs correctly."
