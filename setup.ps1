@@ -60,4 +60,4 @@ if($addedContents -match "\S")
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -EditMode Windows
 
-Write-Output "Now install \CascadiaCode.Nerd.Font.Complete.ttf and select this font in your shell to display glyphs correctly."
+Write-Output "Now install \Caskaydia Cove Regular Nerd Font Complete Windows Compatible.otf and select this font in your shell to display glyphs correctly."
