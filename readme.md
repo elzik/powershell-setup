@@ -1,5 +1,7 @@
 # Powershell Setup
 
+![image](https://user-images.githubusercontent.com/23397871/162536664-ed483df1-0eb7-418b-87e3-5b130a21fb42.png)
+
 This is a Powershell script I use to set up Powershell Core with my preferred modules and prompt theme. The modules installed are:
 - [DockerMsftProvider](https://github.com/OneGet/MicrosoftDockerProvider)
 - [oh-my-posh](https://ohmyposh.dev/)
