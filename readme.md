@@ -10,4 +10,8 @@ This is a Powershell script I use to set up Powershell Core with my preferred mo
 - [PSReadline](https://www.powershellgallery.com/packages/PSReadLine) 
 - [Terminal-Icons](https://github.com/devblackops/Terminal-Icons)
 
-In order for the themed prompt to display correctly you will need to install a font which includes programming ligatures. 'Caskaydia Cove Nerd Font Complete Windows Compatible.ttf' from [Nerd Fonts](https://www.nerdfonts.com/font-downloads) is recommended. See [this guide](https://www.get-itsolutions.com/windows-terminal-change-font/) for then setting the font in Windows Terminal. 
+Prerequisites:
+- [Powershell Core]([url](https://apps.microsoft.com/store/detail/powershell/9MZ1SNWT0N5D?hl=en-gb&gl=GB))
+- [Windows Terminal]([url](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-gb&gl=GB))
+
+In order for the themed prompt to display correctly you will need to install a font which includes programming ligatures. 'Caskaydia Cove Nerd Font Complete Windows Compatible.ttf' from [Nerd Fonts](https://www.nerdfonts.com/font-downloads) is recommended. See [this guide](https://www.get-itsolutions.com/windows-terminal-change-font/) for then setting the font in Windows Terminal.
